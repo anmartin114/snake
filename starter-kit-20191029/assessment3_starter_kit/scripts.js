@@ -9,6 +9,8 @@ function clicked(event) {
   if (event.target.classList.contains("cell"))
     if (event.target.id === "it") {
       event.target.classList.toggle("red");
+      console.log("red");
+      document.getElementById("over").style.display = "flex";
       for (const cell of cells) {
         if (cell.classList.contains("green")) {
           cell.classList.toggle("yellow");
@@ -19,5 +21,3 @@ function clicked(event) {
       event.target.classList.toggle("green");
     }
 }
-
-

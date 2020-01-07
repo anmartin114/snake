@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <header>
+      <h1>SNAKE</h1>
+    </header>
     <main>
       <section class="grid">
         <div class="cell"></div>
@@ -29,6 +32,14 @@
         <div class="cell"></div>
       </section>
     </main>
+    <div id="over">
+      <p>Game over!</p>
+      <input
+        type="button"
+        value="Play Again"
+        onClick="document.location.reload(true)"
+      />
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>
